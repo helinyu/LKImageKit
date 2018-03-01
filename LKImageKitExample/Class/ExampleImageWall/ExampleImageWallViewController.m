@@ -18,36 +18,33 @@
     if (self = [super initWithFrame:frame])
     {
         self.progressBar                 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, PROGRESSBAR_HEIGHT)];
-        self.progressBar.backgroundColor = [UIColor blackColor];
+        self.progressBar.backgroundColor = [UIColor redColor];
         [self.contentView addSubview:self.progressBar];
-        self.imageView                   = [[LKImageView alloc] initWithFrame:self.bounds];
-        self.imageView.delegate          = self;
+        self.imageView = [[LKImageView alloc] initWithFrame:self.bounds];
+        self.imageView.delegate = self;
         self.imageView.delayLoadingImage = NO;
         [self.contentView addSubview:self.imageView];
     }
     return self;
 }
 
-- (void)LKImageViewImageLoading:(LKImageView *)imageView request:(LKImageRequest *)request
-{
+- (void)LKImageViewImageLoading:(LKImageView *)imageView request:(LKImageRequest *)request {
     self.progressBar.frame = CGRectMake(0, 0, self.frame.size.width * request.progress, PROGRESSBAR_HEIGHT);
 }
 
-- (void)LKImageViewImageDidLoad:(LKImageView *)imageView request:(LKImageRequest *)request
-{
+- (void)LKImageViewImageDidLoad:(LKImageView *)imageView request:(LKImageRequest *)request {
     self.progressBar.frame = CGRectMake(0, 0, self.frame.size.width, PROGRESSBAR_HEIGHT);
 }
 
 - (void)prepareForReuse
 {
     self.progressBar.bounds = CGRectMake(0, 0, 0, 4);
+    self.imageView.image = nil;
 }
 
 @end
 
 @interface ExampleImageWallViewController ()
-
-
 
 @end
 
@@ -92,20 +89,11 @@
 
 - (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    ExampleImageWallCell *imageCell                  = (ExampleImageWallCell *) cell;
-    imageCell.imageView.loadingURL                   = [ExampleUtil imageURLFromFileID:indexPath.item + 1 size:64];
+    ExampleImageWallCell *imageCell = (ExampleImageWallCell *) cell;
+    imageCell.imageView.loadingURL = [ExampleUtil imageURLFromFileID:indexPath.item + 1 size:64];
     imageCell.imageView.loadingImageRequest.priority = NSOperationQueuePriorityHigh;
     imageCell.imageView.URL                          = [ExampleUtil imageURLFromFileID:indexPath.item + 1 size:256];
-}
-
-- (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    ExampleImageWallCell *imageCell = (ExampleImageWallCell *) cell;
-    imageCell.imageView.image       = nil;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
+    NSLog(@"image url:%@",imageCell);
 }
 
 @end
