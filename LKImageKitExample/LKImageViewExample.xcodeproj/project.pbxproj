@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0469631C20481E280059D525 /* YDBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0469631B20481E280059D525 /* YDBaseCollectionViewCell.m */; };
 		0723F6061FF5EF4E00BF4557 /* LKImageView+Example.m in Sources */ = {isa = PBXBuildFile; fileRef = 0723F6051FF5EF4E00BF4557 /* LKImageView+Example.m */; };
 		0723F60A1FF606DB00BF4557 /* ExampleFastFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0723F6091FF606DB00BF4557 /* ExampleFastFileCache.m */; };
 		073959151FF242C700D94D27 /* ExampleUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 073959141FF242C700D94D27 /* ExampleUtil.m */; };
@@ -27,6 +28,7 @@
 		07CAEE512004802A002B96CA /* ExampleImageWallOptimizedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAEE502004802A002B96CA /* ExampleImageWallOptimizedViewController.m */; };
 		07CAEE54200483B3002B96CA /* ExampleNetworkFileLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAEE53200483B3002B96CA /* ExampleNetworkFileLoader.m */; };
 		07CAEE57200487CC002B96CA /* ExampleImageURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAEE56200487CC002B96CA /* ExampleImageURLRequest.m */; };
+		2473CA66552F25734E895B20 /* libPods-LKImageViewExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4894AAD6D43BC4ACA80419 /* libPods-LKImageViewExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0469631A20481E280059D525 /* YDBaseCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBaseCollectionViewCell.h; sourceTree = "<group>"; };
+		0469631B20481E280059D525 /* YDBaseCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBaseCollectionViewCell.m; sourceTree = "<group>"; };
 		0713762C1BE06F0E00F86D65 /* LKImageViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKImageViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0723F6041FF5EF4E00BF4557 /* LKImageView+Example.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LKImageView+Example.h"; sourceTree = "<group>"; };
 		0723F6051FF5EF4E00BF4557 /* LKImageView+Example.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LKImageView+Example.m"; sourceTree = "<group>"; };
@@ -93,6 +97,9 @@
 		07CAEE53200483B3002B96CA /* ExampleNetworkFileLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleNetworkFileLoader.m; sourceTree = "<group>"; };
 		07CAEE55200487CC002B96CA /* ExampleImageURLRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleImageURLRequest.h; sourceTree = "<group>"; };
 		07CAEE56200487CC002B96CA /* ExampleImageURLRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleImageURLRequest.m; sourceTree = "<group>"; };
+		5EEF5071F83B0A00133DECF5 /* Pods-LKImageViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKImageViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-LKImageViewExample/Pods-LKImageViewExample.release.xcconfig"; sourceTree = "<group>"; };
+		64672905AE7D0198A0213380 /* Pods-LKImageViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKImageViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LKImageViewExample/Pods-LKImageViewExample.debug.xcconfig"; sourceTree = "<group>"; };
+		BC4894AAD6D43BC4ACA80419 /* libPods-LKImageViewExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LKImageViewExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				073AD0CE1FE8C30F00DEAE34 /* LKImageKit.framework in Frameworks */,
+				2473CA66552F25734E895B20 /* libPods-LKImageViewExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +124,7 @@
 				073AD0C51FE8C21900DEAE34 /* LKImageKit */,
 				0713762D1BE06F0E00F86D65 /* Products */,
 				079406C41F19FC85001F844C /* Frameworks */,
+				C418D5284E0AE13083344B48 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,6 +198,7 @@
 		079406C41F19FC85001F844C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC4894AAD6D43BC4ACA80419 /* libPods-LKImageViewExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -213,8 +223,19 @@
 				07CAEE53200483B3002B96CA /* ExampleNetworkFileLoader.m */,
 				07CAEE55200487CC002B96CA /* ExampleImageURLRequest.h */,
 				07CAEE56200487CC002B96CA /* ExampleImageURLRequest.m */,
+				0469631A20481E280059D525 /* YDBaseCollectionViewCell.h */,
+				0469631B20481E280059D525 /* YDBaseCollectionViewCell.m */,
 			);
 			path = ExampleImageWallOptimized;
+			sourceTree = "<group>";
+		};
+		C418D5284E0AE13083344B48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64672905AE7D0198A0213380 /* Pods-LKImageViewExample.debug.xcconfig */,
+				5EEF5071F83B0A00133DECF5 /* Pods-LKImageViewExample.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,10 +245,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 071376431BE06F0E00F86D65 /* Build configuration list for PBXNativeTarget "LKImageViewExample" */;
 			buildPhases = (
+				E8C441CE56C33FE693B861EB /* [CP] Check Pods Manifest.lock */,
 				071376281BE06F0E00F86D65 /* Sources */,
 				071376291BE06F0E00F86D65 /* Frameworks */,
 				0713762A1BE06F0E00F86D65 /* Resources */,
 				07EFAAF81ECD7EC7004D2A81 /* Embed Frameworks */,
+				5A3835734BB0343F8999B61B /* [CP] Embed Pods Frameworks */,
+				F93EE5A8E483C261375133DC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,6 +330,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A3835734BB0343F8999B61B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LKImageViewExample/Pods-LKImageViewExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8C441CE56C33FE693B861EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LKImageViewExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F93EE5A8E483C261375133DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LKImageViewExample/Pods-LKImageViewExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		071376281BE06F0E00F86D65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -319,6 +394,7 @@
 				073AD0C11FE8C11400DEAE34 /* AppDelegate.m in Sources */,
 				073AD0F31FEB7B0A00DEAE34 /* ExampleImageWallViewController.m in Sources */,
 				07CAEE54200483B3002B96CA /* ExampleNetworkFileLoader.m in Sources */,
+				0469631C20481E280059D525 /* YDBaseCollectionViewCell.m in Sources */,
 				0723F6061FF5EF4E00BF4557 /* LKImageView+Example.m in Sources */,
 				073AD0F01FEB6F6A00DEAE34 /* ExampleCustomPropertyViewController.m in Sources */,
 				0723F60A1FF606DB00BF4557 /* ExampleFastFileCache.m in Sources */,
@@ -456,6 +532,7 @@
 		};
 		071376441BE06F0E00F86D65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64672905AE7D0198A0213380 /* Pods-LKImageViewExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -476,6 +553,7 @@
 		};
 		071376451BE06F0E00F86D65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EEF5071F83B0A00133DECF5 /* Pods-LKImageViewExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

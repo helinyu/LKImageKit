@@ -87,13 +87,13 @@
     return CGSizeMake(size, size);
 }
 
-- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    ExampleImageWallCell *imageCell = (ExampleImageWallCell *) cell;
-    imageCell.imageView.loadingURL = [ExampleUtil imageURLFromFileID:indexPath.item + 1 size:64];
-    imageCell.imageView.loadingImageRequest.priority = NSOperationQueuePriorityHigh;
-    imageCell.imageView.URL                          = [ExampleUtil imageURLFromFileID:indexPath.item + 1 size:256];
-    NSLog(@"image url:%@",imageCell);
-}
+//- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    ExampleImageWallCell *imageCell = (ExampleImageWallCell *) cell;
+//    imageCell.imageView.loadingURL = [ExampleUtil imageURLFromFileID:indexPath.item + 1 size:64];
+//    imageCell.imageView.loadingImageRequest.priority = NSOperationQueuePriorityHigh;
+//    imageCell.imageView.URL                          = [ExampleUtil imageURLFromFileID:indexPath.item + 1 size:256];
+//    NSLog(@"image url:%@",imageCell);
+//}
 
 @end
